@@ -1,11 +1,12 @@
 //search index
 
+let search = document.getElementById("search55");
 let index = [];
 
 let children = document.querySelector(".container").children;
 for (let i=0; i < children.length; i++) {
     let e = children[i];
-    if (e.classList.contains("row") && e != target.parentElement) {
+    if (e.classList.contains("row") && e != search.parentElement) {
         let rowChildren = e.children;
 
         for (let j=0; j < rowChildren.length; j++) {
