@@ -1,7 +1,7 @@
 /**
  * Site header
  */
- .wrapper .container {
+ .wrapper /*.container*/ {
     max-width: 80rem;
 }
 
@@ -69,10 +69,10 @@
 * 55 styles
 */
 #iframe55 {
-    border: .1em solid $grey-color-light;
+    border: 3px solid $grey-color-light;
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
 }
 
 #fullscreen55 {
