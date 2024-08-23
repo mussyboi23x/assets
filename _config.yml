@@ -11,3 +11,6 @@ github_username:  mochawoof
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#include some js
+include: ["__*.js"]
