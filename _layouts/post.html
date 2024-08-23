@@ -16,7 +16,7 @@ layout: default
   </header>
 
   {% if page.55embed_url %}
-    <iframe class="55iframe" style="width: 100%;height: auto; aspect-ratio:16/9;" src="{{ page.55embed_url | relative_url }}"></iframe>
+    <iframe id="iframe55" style="width: 100%;height: auto; aspect-ratio:16/9;" src="{{ page.55embed_url | relative_url }}"></iframe>
   {% endif %}
   <article class="post-content">
     {{ content }}
