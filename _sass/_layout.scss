@@ -66,5 +66,14 @@
 }
 
 #iframe55 {
-    border: 1px solid $grey-color-light;
+    border: .1em solid $grey-color-light;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+#fullscreen55 {
+    display: block;
+    width: 100%;
+    text-align: right;
 }
