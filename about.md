@@ -4,6 +4,8 @@ title: about
 permalink: /about/
 ---
 
-Bavaria ipsum dolor sit amet hoid a bissal wos gehd ollaweil nomoi. Wolln mei Weißwiaschd sowos, koa Habedehre schaugn san. Foidweg sog i hoggd Kaiwe, wuid Marterl großherzig ned woar.
+{{ site.title }}: {{ site.description }}
 
-Obandln singd Hendl spernzaln i hab an singan dringma aweng Hendl oamoi gwiss Fünferl. Xaver Auffisteign vasteh kumm geh i moan oiwei nia om auf’n Gipfe hoam obandeln.
+Open-source on [GitHub](https://github.com/mochawoof/html55)!
+
+Site theme modified from midzer's [urban theme](https://github.com/midzer/urban-theme)
