@@ -3,9 +3,18 @@
 ---
 @charset "utf-8";
 
-$grey-color:       #346ae4;
-$grey-color-light: #346ae4;
-$grey-color-dark:  #346ae4;
+$grey-color:       #11dcff;
+$grey-color-light: #11dcff;
+$grey-color-dark:  #11dcff;
+
+$color-initial: #1f2125;
+$color-primary: #11dcff;
+$color-secondary: #dddddd;
+$color-tertiary: #33373d;
+$color-quaternary: #33373d;
+$color-quinary: #000;
+
+$color-bg: #000;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -13,3 +22,40 @@ $grey-color-dark:  #346ae4;
         "base",
         "layout"
 ;
+
+/**
+* 55 styles
+*/
+#iframe55container {
+        border: 3px solid $grey-color-light;
+        background: #000;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/10;
+}
+
+#iframe55 {
+        border: none;
+        width: 100%;
+        height: 100%;
+        display: block;
+}
+
+#controls55 {
+        display: block;
+        width: 100%;
+        text-align: right;
+}
+
+#search55 {
+        color: $color-secondary;
+        background: $color-bg;
+}
+
+a {
+        text-decoration: none;
+
+        &:hover {
+                text-decoration: underline;
+        }
+}

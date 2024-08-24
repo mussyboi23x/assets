@@ -12,4 +12,11 @@ function focusOnIframe() {
     iframe55.contentWindow.focus();
 }
 focusOnIframe();
-iframe55.onclick = focusOnIframe;
+
+iframe55.contentWindow.onclick = focusOnIframe;
+iframe55.contentWindow.onfocus = (e) => {
+    iframe55container.style.borderColor = "";
+};
+iframe55.contentWindow.onblur = (e) => {
+    iframe55container.style.borderColor = "#fff";
+}

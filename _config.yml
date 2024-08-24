@@ -8,6 +8,8 @@ baseurl: "/html55" # the subpath of your site, e.g. /blog
 # twitter_username: jekyllrb
 github_username:  mochawoof
 
+new55: 259200 # 60s * 60 * 24 * 3
+
 # Build settings
 markdown: kramdown
 permalink: pretty
