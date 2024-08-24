@@ -69,11 +69,19 @@
 /**
 * 55 styles
 */
-#iframe55 {
+#iframe55container {
     border: 3px solid $grey-color-light;
+    background: #000;
     width: 100%;
     height: auto;
     aspect-ratio: 16/10;
+}
+
+#iframe55 {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 #controls55 {

@@ -16,7 +16,9 @@ layout: default
   </header>
 
   {% if page.55embed_url %}
-    <iframe id="iframe55" src="{{ page.55embed_url | relative_url }}"></iframe>
+    <div id="iframe55container">
+      <iframe id="iframe55" src="{{ page.55embed_url | relative_url }}"></iframe>
+    </div>
     <div id="controls55">
       <a id="fullscreen55" href="#" title="Fullscreen"><i class="fa-solid fa-expand"></i></a>
     </div>

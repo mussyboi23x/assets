@@ -1,11 +1,15 @@
 //fullscreen button
 
+let iframe55 = document.getElementById("iframe55");
+let iframe55container = document.getElementById("iframe55container");
+
 document.getElementById("fullscreen55").onclick = (e) => {
-    document.getElementById("iframe55").requestFullscreen();
+    iframe55.requestFullscreen();
+    onResize();
 }
 
 function focusOnIframe() {
-    document.getElementById("iframe55").contentWindow.focus();
+    iframe55.contentWindow.focus();
 }
 focusOnIframe();
-document.getElementById("iframe55").onclick = focusOnIframe;
+iframe55.onclick = focusOnIframe;
