@@ -26,6 +26,11 @@ $color-bg: #000;
 /**
 * 55 styles
 */
+
+html, body {
+        background-color: $color-bg;
+}
+
 #iframe55container {
         border: 3px solid $grey-color-light;
         background: #000;
