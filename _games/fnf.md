@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Friday Night Funkin
+date: 2024-8-23
 preview: embeds/fnf/icon.png
 55embed_url: embeds/fnf/index.html
 ---

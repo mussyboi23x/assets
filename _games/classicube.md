@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Classicube
+date: 2024-8-23
 preview: embeds/classicube/icon.png
 55embed_url: embeds/classicube/server/play/index.html
 ---

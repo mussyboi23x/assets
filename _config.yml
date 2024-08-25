@@ -16,3 +16,8 @@ permalink: pretty
 
 #include some js
 include: ["__*.js"]
+
+#collections
+collections:
+  games:
+    output: true

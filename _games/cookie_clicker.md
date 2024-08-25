@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Cookie Clicker
+date: 2024-8-24
 preview: embeds/cookie_clicker/icon.png
 55embed_url: embeds/cookie_clicker/index.html
 ---

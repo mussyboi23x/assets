@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Slope
+date: 2024-8-23
 preview: embeds/slope/icon.png
 55embed_url: embeds/slope/index.html
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Watermelon Game
+date: 2024-8-23
 preview: embeds/watermelon_game/icon.png
 55embed_url: embeds/watermelon_game/game.html
 ---
