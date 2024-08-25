@@ -2,9 +2,10 @@
 
 let iframe55 = document.getElementById("iframe55");
 let iframe55container = document.getElementById("iframe55container");
+let main_element = iframe55;
 
 document.getElementById("fullscreen55").onclick = (e) => {
-    iframe55.requestFullscreen();
+    main_element.requestFullscreen();
 }
 
 //handle fullscreen transition
@@ -75,4 +76,9 @@ document.getElementById("zoom_reset55").onclick = (e) => {
 //restore saved zoom on iframe load
 iframe55.onload = (e) => {
     setZoom(localStorage.getItem("zoom55"));
+
+    let mainCheck = iframe55.contentDocument.querySelector(".main_element55");
+    if (mainCheck) {
+        main_element = mainCheck;
+    }
 };
