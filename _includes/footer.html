@@ -18,22 +18,10 @@
             <span>Report an issue</span>
           </a>
         </li>
-        {% endif %}
-
-        {% if site.github_username %}
         <li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <i class="fa-brands fa-github"></i>
-            <span class="username">{{ site.github_username }}</span>
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.twitter_username %}
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <i class="fa-brands fa-twitter"></i>
-            <span class="username">{{ site.twitter_username }}</span>
+          <a href="{{ site.issue_url }}?labels=game suggestion&body=Provide the game name and link if you can find one">
+            <i class="fa-solid fa-heart"></i>
+            <span>Suggest a game</span>
           </a>
         </li>
         {% endif %}
