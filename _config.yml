@@ -10,6 +10,7 @@ baseurl: "/html55" # the subpath of your site, e.g. /blog
 issue_url: https://github.com/mochawoof/html55/issues/new
 
 new55: 259200 # 60s * 60 * 24 * 3
+timezone: America/New_York
 
 # Build settings
 markdown: kramdown
