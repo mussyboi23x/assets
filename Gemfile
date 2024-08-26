@@ -3,4 +3,6 @@ gem 'jekyll'
 
 group :jekyll_plugins do
     gem 'jekyll-seo-tag'
+    gem 'tzinfo'
+    gem 'tzinfo-data'
 end

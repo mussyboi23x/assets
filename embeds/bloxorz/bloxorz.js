@@ -6460,18 +6460,23 @@ p.nominalBounds = null;
 		
 		stage.onScreenKeys = {
 			ku: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowUp"});
 			},
 			kd: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowDown"});
 			},
 			kl: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowLeft"});
 			},
 			kr: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowRight"});
 			},
 			end: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyUp({code: "touchup"});
 			}
 		};
@@ -6506,21 +6511,27 @@ p.nominalBounds = null;
 		
 		stage.onScreenKeys = {
 			ku: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowUp"});
 			},
 			kd: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowDown"});
 			},
 			kl: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowLeft"});
 			},
 			kr: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "ArrowRight"});
 			},
 			end: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyUp({code: "touchup"});
 			},
 			ss: function() {
+				if (isAdBreakActive) return;
 				stage.triggerKeyDown({code: "Space"});
 			}
 		};
@@ -12381,18 +12392,27 @@ p.nominalBounds = new cjs.Rectangle(-90,-114,200,150);
 						addSwirl(tile, x, y);
 					});
 				});
-		
+				
 				wait(30, function () {
 					_.destroy();
 					stage.levelNumber++;
 					stage.levelAttempts = 0;
 					stage.totalMoves += _.moves;
 					stage.localSave.save(stage.levelNumber);
-					if(stage.levelNumber > levels.length) {
-						stagePlay("finish");
-					} else {
-						stagePlay("stagetitle");
-					}
+					const stageName = stage.levelNumber > levels.length ? "finish" : "stagetitle";
+
+					setTimeout(()=>{
+						cmgAdBreakCall();					
+						
+						onAdBreakCompleteCallback = () => {
+							onAdBreakCompleteCallback = null;
+							stagePlay(stageName);
+						};
+						setTimeout(()=>{
+							if (isAdBreakActive) return;
+							onAdBreakCompleteCallback();
+						}, 1000);
+					}, 100);
 				});
 			};
 			
