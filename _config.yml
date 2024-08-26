@@ -7,6 +7,7 @@ baseurl: "/html55" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  mochawoof
+issue_url: https://github.com/mochawoof/html55/issues/new
 
 new55: 259200 # 60s * 60 * 24 * 3
 

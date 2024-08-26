@@ -11,6 +11,15 @@
 
     <div class="column">
       <ul class="social-media-list">
+        {% if site.issue_url %}
+        <li>
+          <a href="{{ site.issue_url }}">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Report an issue</span>
+          </a>
+        </li>
+        {% endif %}
+
         {% if site.github_username %}
         <li>
           <a href="https://github.com/{{ site.github_username }}">
