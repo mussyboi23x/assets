@@ -4,6 +4,13 @@ let iframe55 = document.getElementById("iframe55");
 let iframe55container = document.getElementById("iframe55container");
 let main_element = iframe55;
 
+function preventDefault(e) {
+    e.preventDefault();
+}
+
+document.addEventListener("keydown", preventDefault);
+document.addEventListener("keyup", preventDefault);
+
 document.getElementById("fullscreen55").onclick = (e) => {
     main_element.requestFullscreen();
 }
@@ -73,16 +80,9 @@ document.getElementById("zoom_reset55").onclick = (e) => {
     setZoomAndStore(1);
 }
 
-function preventDefault(e) {
-    e.preventDefault();
-}
-
 //restore saved zoom on iframe load
 iframe55.onload = (e) => {
     setZoom(localStorage.getItem("zoom55"));
-
-    iframe55.contentDocument.addEventListener("keydown", preventDefault);
-    iframe55.contentDocument.addEventListener("keyup", preventDefault);
 
     let mainCheck = iframe55.contentDocument.querySelector(".main_element55");
     if (mainCheck) {
