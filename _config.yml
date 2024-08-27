@@ -17,7 +17,7 @@ markdown: kramdown
 permalink: pretty
 
 #fix embeds
-include: ["_*.*", "*.3ds"]
+include: ["_*.*", "*.ttf"]
 
 #collections
 collections:
