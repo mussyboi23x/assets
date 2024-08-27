@@ -16,8 +16,8 @@ timezone: America/New_York
 markdown: kramdown
 permalink: pretty
 
-#include some js
-include: ["__*.js"]
+#fix some embed files
+include: ["embeds/*/_*.*"]
 
 #collections
 collections:
