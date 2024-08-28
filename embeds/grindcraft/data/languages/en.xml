@@ -5,7 +5,7 @@
 	<label id="invLabel">Inventory</label>
 	<label id="achLabel">Achievements</label>
 	<!--<label id="sInfo">Version 0.9.6.9</label>-->
-	<label id="sInfo">Version 08fbe4c</label>
+	<label id="sInfo">Version ddf1639</label>
 	<label id="sSfx">SFX Volume</label>
 	<label id="sMusic">Music Volume</label>
 	<label id="particlesL">Particles</label>
