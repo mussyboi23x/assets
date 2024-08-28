@@ -1,4 +1,4 @@
-motd: hi
+motd: free games, no ads
 
 # Site settings
 title: HTML55 GAMES
@@ -9,7 +9,7 @@ baseurl: "/html55" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 issue_url: https://github.com/mochawoof/html55/issues/new
 
-new55: 259200 # 60s * 60 * 24 * 3
+new55: 172800 # 60s * 60 * 24 * 2
 timezone: America/New_York
 
 # Build settings
