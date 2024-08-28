@@ -74,7 +74,7 @@ document.getElementById("zoom_reset55").onclick = (e) => {
 }
 
 function preventDefault(e) {
-    if (e.code == "ArrowUp" || e.code == "ArrowDown" || e.code == "ArrowLeft" || e.code == "ArrowRight" || e.code == "Space" && iframe55.contentDocument.nodeName.toLowerCase() != "input") {
+    if (e.code == "ArrowUp" || e.code == "ArrowDown" || e.code == "ArrowLeft" || e.code == "ArrowRight" || e.code == "Space" && iframe55.contentDocument.activeElement.nodeName.toLowerCase() != "input") {
         e.preventDefault();
     }
 }
