@@ -6,7 +6,14 @@ permalink: /about/
 
 {{ site.title }}: {{ site.description }}
 
-We currently have {{ site.games | size }} games!
+{% assign s = 0 %}
+{% for collection in site.collections %}
+    {% assign name = collection.label %}
+    {% assign si = site.[name] | size %}
+    {% assign s = s + si %}
+{% endfor %}
+
+We currently have {{ s }} total games!
 
 Open-source on [GitHub](https://github.com/mochawoof/html55)!
 
