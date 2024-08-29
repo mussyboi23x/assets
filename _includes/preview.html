@@ -2,7 +2,7 @@
     <input id="search55" type="text" placeholder="Search...">
 </div>
 <span id="posts">
-{% assign posts = site.games | sort: "last_updated" | reverse %}
+{% assign posts = include.collection | sort: "last_updated" | reverse %}
 {% for post in posts %}
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
