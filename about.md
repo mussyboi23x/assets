@@ -10,7 +10,7 @@ permalink: /about/
 {% for collection in site.collections %}
     {% assign name = collection.label %}
     {% assign si = site.[name] | size %}
-    {% assign s = s + si %}
+    {% s = s + si %}
 {% endfor %}
 
 We currently have {{ s }} total games!
