@@ -4,7 +4,7 @@ motd: free games, no ads
 title: HTML55 GAMES
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Big collection of free games with no ads
+  Big collection of only the BEST free games with no ads
 baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 issue_url: https://github.com/mochawoof/mochawoof.github.io/issues/new
