@@ -23,3 +23,5 @@ include: ["_*.*"]
 collections:
   games:
     output: true
+  other:
+    output: true
