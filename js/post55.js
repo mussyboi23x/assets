@@ -43,7 +43,7 @@ function setZoom(zoom) {
     if (isNaN(zoom)) {
         zoom = 1;
     }
-    iframe55.contentDocument.body.style.zoom = zoom;
+    iframe55.contentWindow.top.document.body.style.zoom = zoom;
 
     //force iframe to acknowledge resize
     iframe55.contentWindow.dispatchEvent(new Event("resize"))
@@ -56,7 +56,7 @@ function setZoomAndStore(zoom) {
 }
 
 function getZoom() {
-    let zoom = parseFloat(iframe55.contentDocument.body.style.zoom);
+    let zoom = parseFloat(iframe55.contentWindow.top.document.body.style.zoom);
     if (isNaN(zoom)) {
         return 1;
     }
@@ -74,7 +74,7 @@ document.getElementById("zoom_reset55").onclick = (e) => {
 }
 
 function preventDefault(e) {
-    if (e.code == "ArrowUp" || e.code == "ArrowDown" || e.code == "ArrowLeft" || e.code == "ArrowRight" || e.code == "Space" && iframe55.contentDocument.activeElement.nodeName.toLowerCase() != "input") {
+    if (e.code == "ArrowUp" || e.code == "ArrowDown" || e.code == "ArrowLeft" || e.code == "ArrowRight" || e.code == "Space" && iframe55.contentWindow.top.document.activeElement.nodeName.toLowerCase() != "input") {
         e.preventDefault();
     }
 }
@@ -83,10 +83,10 @@ function preventDefault(e) {
 iframe55.onload = (e) => {
     setZoom(localStorage.getItem("zoom55"));
 
-    iframe55.contentDocument.addEventListener("keydown", preventDefault);
-    iframe55.contentDocument.addEventListener("keyup", preventDefault);
+    iframe55.contentWindow.top.document.addEventListener("keydown", preventDefault);
+    iframe55.contentWindow.top.document.addEventListener("keyup", preventDefault);
 
-    let mainCheck = iframe55.contentDocument.querySelector(".main_element55");
+    let mainCheck = iframe55.contentWindow.top.document.querySelector(".main_element55");
     if (mainCheck) {
         main_element = mainCheck;
     }
