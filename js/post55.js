@@ -75,7 +75,7 @@ document.getElementById("zoom_reset55").onclick = (e) => {
 document.getElementById("popout55").onclick = (e) => {
     let w = window.open(iframe55.src);
     w.document.title = document.querySelector(".post-title").innerText;
-    iframe55.src = "about:blank";
+    //iframe55.src = "about:blank";
 }
 
 function preventDefault(e) {
