@@ -72,6 +72,10 @@ document.getElementById("zoom_out55").onclick = (e) => {
 document.getElementById("zoom_reset55").onclick = (e) => {
     setZoomAndStore(1);
 }
+document.getElementById("popout55").onclick = (e) => {
+    window.open(iframe55.src);
+    iframe55.src = "about:blank";
+}
 
 function preventDefault(e) {
     if (e.code == "ArrowUp" || e.code == "ArrowDown" || e.code == "ArrowLeft" || e.code == "ArrowRight" || e.code == "Space" && iframe55.contentDocument.activeElement.nodeName.toLowerCase() != "input") {
