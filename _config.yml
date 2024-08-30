@@ -7,7 +7,7 @@ description: >
   Big collection of only the BEST free games with no ads
 baseurl: ""
 # url: "http://yourdomain.com" # unused
-issue_url: https://github.com/mochawoof/mochawoof.github.io/issues/new
+github_url: https://github.com/mochawoof/mochawoof.github.io/issues/new # don't use a trailing slash here
 
 new55: 172800 # how new a post should be to get the NEW badge * 60 * 24 * 2
 timezone: America/New_York
