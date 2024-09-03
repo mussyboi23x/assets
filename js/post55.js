@@ -1,7 +1,6 @@
 //fullscreen button
 
 let iframe55 = document.getElementById("iframe55");
-let iframe55container = document.getElementById("iframe55container");
 let main_element = iframe55;
 
 document.getElementById("fullscreen55").onclick = (e) => {
@@ -31,10 +30,10 @@ focusOnIframe();
 
 iframe55.contentWindow.onclick = focusOnIframe;
 iframe55.contentWindow.onfocus = (e) => {
-    iframe55container.style.borderColor = "";
+    iframe55.style.borderColor = "";
 };
 iframe55.contentWindow.onblur = (e) => {
-    iframe55container.style.borderColor = "#fff";
+    iframe55.style.borderColor = "#fff";
 }
 
 //handle zooming
