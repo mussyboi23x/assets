@@ -87,8 +87,8 @@ function preventDefault(e) {
 iframe55.onload = (e) => {
     setZoom(localStorage.getItem("zoom55"));
 
-    iframe55.contentDocument.addEventListener("keydown", preventDefault);
-    iframe55.contentDocument.addEventListener("keyup", preventDefault);
+    //iframe55.contentDocument.addEventListener("keydown", preventDefault);
+    //iframe55.contentDocument.addEventListener("keyup", preventDefault);
 
     let mainCheck = iframe55.contentDocument.querySelector(".main_element55");
     if (mainCheck) {
