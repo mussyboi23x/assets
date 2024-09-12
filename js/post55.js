@@ -9,36 +9,36 @@ document.getElementById("fullscreen55").onclick = (e) => {
 
 //handle fullscreen transition
 
-let lastZoom = 1;
+let last_zoom = 1;
 
 iframe55.onfullscreenchange = (e) => {
     if (document.fullscreenElement) {
-        lastZoom = getZoom();
-        setZoom(1);
+        last_zoom = get_zoom();
+        set_zoom(1);
     } else {
-        setZoom(lastZoom);
+        set_zoom(last_zoom);
     }
 }
 
 
 //handle focus changes
 
-function focusOnIframe() {
+function focus_on_iframe() {
     iframe55.contentWindow.focus();
 }
-focusOnIframe();
+focus_on_iframe();
 
-iframe55.contentWindow.onclick = focusOnIframe;
-iframe55.contentWindow.onfocus = (e) => {
+iframe55.contentWindow.onclick = focus_on_iframe;
+iframe55.contentWindow.onfocus = () => {
     iframe55.style.borderColor = "";
 };
-iframe55.contentWindow.onblur = (e) => {
+iframe55.contentWindow.onblur = () => {
     iframe55.style.borderColor = "#fff";
 }
 
 //handle zooming
 
-function setZoom(zoom) {
+function set_zoom(zoom) {
     if (isNaN(zoom)) {
         zoom = 1;
     }
@@ -49,12 +49,12 @@ function setZoom(zoom) {
     return zoom;
 }
 
-function setZoomAndStore(zoom) {
-    setZoom(zoom);
+function set_zoom_and_store(zoom) {
+    set_zoom(zoom);
     localStorage.setItem("zoom55", zoom);
 }
 
-function getZoom() {
+function get_zoom() {
     let zoom = parseFloat(iframe55.contentDocument.body.style.zoom);
     if (isNaN(zoom)) {
         return 1;
@@ -63,13 +63,13 @@ function getZoom() {
 }
 
 document.getElementById("zoom_in55").onclick = (e) => {
-    setZoomAndStore(getZoom() * 1.1);
+    set_zoom_and_store(get_zoom() * 1.1);
 }
 document.getElementById("zoom_out55").onclick = (e) => {
-    setZoomAndStore(getZoom() * 0.9);
+    set_zoom_and_store(get_zoom() * 0.9);
 }
 document.getElementById("zoom_reset55").onclick = (e) => {
-    setZoomAndStore(1);
+    set_zoom_and_store(1);
 }
 document.getElementById("popout55").onclick = (e) => {
     let w = window.open(iframe55.src);
@@ -85,13 +85,13 @@ function preventDefault(e) {
 
 //restore saved zoom on iframe load
 iframe55.onload = (e) => {
-    setZoom(localStorage.getItem("zoom55"));
+    set_zoom(localStorage.getItem("zoom55"));
 
     //iframe55.contentDocument.addEventListener("keydown", preventDefault);
     //iframe55.contentDocument.addEventListener("keyup", preventDefault);
 
-    let mainCheck = iframe55.contentDocument.querySelector(".main_element55");
-    if (mainCheck) {
-        main_element = mainCheck;
+    let main_check = iframe55.contentDocument.querySelector(".main_element55");
+    if (main_check) {
+        main_element = main_check;
     }
 };
