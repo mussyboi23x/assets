@@ -25,3 +25,5 @@ collections:
     output: true
   other:
     output: true
+  pc_games:
+    output: true
