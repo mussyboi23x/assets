@@ -1,0 +1,28 @@
+{
+  "jokes": [
+    {
+      "id": "0",
+      "joke": "Remember, this is just a game! It's a much bigger problem in real life."
+    },
+    {
+      "id": "1",
+      "joke": "I'm trying to rebrand Gerrymandering. It gives us politicians a bad name."
+    },
+    {
+      "id": "2",
+      "joke": "Red, Blue? Who cares. With your skill, I bet you could make Green win."
+    },
+    {
+      "id": "3",
+      "joke": "Don't be afraid to really play with what the word 'contiguous' means!"
+    },
+    {
+      "id": "4",
+      "joke": "If you can't change a voter's mind, just move em!"
+    },
+    {
+      "id": "5",
+      "joke": "You sure got a magic finger there!"
+    }
+  ]
+}

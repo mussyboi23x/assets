@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerrymander - a voting district game by GameTheory</title>
+  <meta property="og:url" content="http://playgerrymander.com/game" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gerrymander - a voting district game by GameTheory" />
+  <meta property="og:description" content="GerryMander is a simply puzzle game designed to show you how gerrymandering can be used to rig an election. In GerryMander, you draw voting districts to favor your party and win the election." />
+  <meta property="og:image" content="http://playgerrymander.com/game/assets/images/gerry/gerry_idle.png" />
+  <meta property="fb:app_id" content="167222210497881" />
+  <meta name="description" content="GerryMander is a simply puzzle game designed to show you how gerrymandering can be used to rig an election. In GerryMander, you draw voting districts to favor your party and win the election." />
+  <meta name="keywords" content="gerrymander, game, voting, district, puzzle, gametheory, election, rig, results, senate, state, united states, us" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="lib/phaser.min.js"></script>
+  <script src="lib/phaser-input.js"></script>
+  <script src="lib/phaser-nineslice.min.js"></script>
+  <script src="js/gerrymander.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '167222210497881',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110511094-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110511094-1');
+  </script>
+</head>
+<body>
+</body>
+</html>

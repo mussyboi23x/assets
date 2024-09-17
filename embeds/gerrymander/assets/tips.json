@@ -1,0 +1,24 @@
+{
+  "tips": [
+    {
+      "id": "0",
+      "tip": "Try winning as many districts with as few voting blocs as possible!"
+    },
+    {
+      "id": "1",
+      "tip": "If the opponent has too many blocs, group as many of them into one district as you can."
+    },
+    {
+      "id": "2",
+      "tip": "Sometimes ties can help you win the whole map!"
+    },
+    {
+      "id": "3",
+      "tip": "Don't be afraid to delete districts and start again."
+    },
+    {
+      "id": "4",
+      "tip": "In order to win, you will have to let the enemy win somewhere."
+    }
+  ]
+}

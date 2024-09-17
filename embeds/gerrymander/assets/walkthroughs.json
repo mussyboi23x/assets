@@ -1,0 +1,78 @@
+{
+  "walkthroughs": [
+    {
+      "id": "0",
+      "walkthrough": "Well look at this! It's a nice little town with 9 counties"
+    },
+    {
+      "id": "1",
+      "walkthrough": "Looks like BLUE is going to lose the election based purely on the numbers - 5 to 4!",
+      "colors": [
+        {
+          "color": "#3582fd",
+          "index": "11"
+        },
+        {
+          "color": "#000000",
+          "index": "16"
+        },
+        {
+          "color": "#fe173c",
+          "index": "76"
+        },
+        {
+          "color": "#000000",
+          "index": "77"
+        },
+        {
+          "color": "#3582fd",
+          "index": "81"
+        },
+        {
+          "color": "#000000",
+          "index": "82"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "walkthrough": "But - what if we divide up the COUNTIES into 3 DISTRICTS like this..."
+    },
+    {
+      "id": "3",
+      "walkthrough": "Red still has more of the population...",
+      "colors": [
+        {
+          "color": "#fe173c",
+          "index": "0"
+        },
+        {
+          "color": "#000000",
+          "index": "4"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "walkthrough": "But now blue controls more of the vote!",
+      "colors": [
+        {
+          "color": "#3582fd",
+          "index": "8"
+        },
+        {
+          "color": "#000000",
+          "index": "13"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "walkthrough": "That's what we call GERRYMANDERING in action"
+    },
+    {
+      "id": "6",
+      "walkthrough": "Not so difficult, eh? Ready to try it for yourself?"
+    }
+  ]
+}

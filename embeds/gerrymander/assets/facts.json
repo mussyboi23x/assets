@@ -1,0 +1,32 @@
+{
+  "facts": [
+    {
+      "id": "0",
+      "fact": "Gerrymandering is the act of drawing the political map for my...I mean your benefit!"
+    },
+    {
+      "id": "1",
+      "fact": "Gerrymandering is named after Gov Elbridge Gerry, and a pecuilar district he approved."
+    },
+    {
+      "id": "2",
+      "fact": "Districts are drawn by their states giving both sides the chance to gerrymander."
+    },
+    {
+      "id": "3",
+      "fact": "Some states are too small to be gerrymandered, as they only have 1 district."
+    },
+    {
+      "id": "4",
+      "fact": "Only 4 states, CA, ID, AR, WA have non-partisan boards that draws the map."
+    },
+    {
+      "id": "5",
+      "fact": "'Packing' - Squishing as many voters into a single district to make them lose elsewhere."
+    },
+    {
+      "id": "6",
+      "fact": "'Cracking' - Breaking up voters into as many districts as possible to weaken them."
+    }
+  ]
+}

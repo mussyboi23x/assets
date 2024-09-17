@@ -1,0 +1,34 @@
+{
+  "examples": [
+    {
+      "id": "0",
+      "image": "California23",
+      "title": "Example: California 23rd",
+      "text": "Nicknamed 'the district that disappears at high tide', this district was drawn to pack left-leaning costal cities into one district. It was redrawn in 2011."
+    },
+    {
+      "id": "1",
+      "image": "Illinois17",
+      "title": "Example: Illinois 17th",
+      "text": "Nicknamed 'the rabbit on a skateboard'. This district was drawn up in bi-partisan effort to protect two imcumbents. It was redrawn in 2013."
+    },
+    {
+      "id": "2",
+      "image": "NorthCarolina12",
+      "title": "Example: North Carolina 12th",
+      "text": "This district was designed as a Minority-Majority district. That means this district was meant to hold as many minority voters as possible. It was redrawn in 2017."
+    },
+    {
+      "id": "3",
+      "image": "OriginalGerrmander",
+      "title": "Example: The original",
+      "text": "This is the district that the term Gerrymander was coined from. Isn't it just...beautiful?"
+    },
+    {
+      "id": "4",
+      "image": "Illinois4",
+      "title": "Example: Illinois 4th",
+      "text": "Nicknamed 'earmuffs' because of its layout. It was created to pack two majority Hispanic parts of Chicago into one district."
+    }
+  ]
+}

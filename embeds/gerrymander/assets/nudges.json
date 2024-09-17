@@ -1,0 +1,25 @@
+{
+  "nudges": [
+    {
+      "id": "0",
+      "nudge": "Try drawing a contiguous group of X",
+      "response": "Great job!"
+    },
+    {
+      "id": "1",
+      "nudge": "Here, I think this one works...",
+      "response": "Wonderful!",
+      "altresponse": "OK yeah that will do..."
+    },
+    {
+      "id": "2",
+      "nudge": "Nice map there but I think you can make a better one! We like to win after all!",
+      "response": "There you go!"
+    },
+    {
+      "id": "3",
+      "nudge": "Draw a district and dragging your finger through X tiles",
+      "response": "That's it!"
+    }
+  ]
+}
