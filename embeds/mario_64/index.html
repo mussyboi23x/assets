@@ -41,6 +41,7 @@
     </style>
   </head>
   <body>
+    <p id="clickmebitch" style="text-align: center;">Click anywhere to start...</p>
     <!--<div id="controls">
       <div id="keyboard">
         <h2>Keyboard Controls</h2>
@@ -93,7 +94,18 @@
         }
       };
     </script>
-    <script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>
+    <script>
+      document.onclick = () => {
+        document.querySelector("#clickmebitch").remove();
+
+        let s = document.createElement("script");
+        s.async = true;
+        s.type = "text/javascript";
+        s.src = "sm64.us.f3dex2e.js";
+        document.body.appendChild(s);
+      }
+    </script>
+    <!--<script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>-->
     <script>
     </script>
   </body>
