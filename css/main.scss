@@ -27,14 +27,7 @@ $color-bg: #000;
 * 55 styles
 */
 
-@font-face {
-        font-family: FreePixel;
-        src: url(FreePixel.ttf);
-}
-
 .box {
-        font-family: FreePixel, sans-serif;
-        font-size: 12pt;
         border: 1px solid $grey-color-light;
         width: 100%;
         margin-bottom: 10px;
