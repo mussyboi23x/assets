@@ -15,6 +15,10 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
+  {% if page.box_embed55 %}
+    <div class="box">{{ page.box_embed55 }}</div>
+  {% endif %}
+
   {% if page.embed_url55 %}
     <iframe id="iframe55" src="{{ page.embed_url55 | relative_url }}"></iframe>
     <div id="controls55">
