@@ -56,7 +56,7 @@ document.getElementById("search55").oninput = (e) => {
         if (text.includes(search)) {
             let insert_at = 0;
             for_each_row((i, row) => {
-                if (row.children.length < 3) {
+                if (row.children.length < 4) {
                     i = -1;
                 } else {
                     insert_at++;
