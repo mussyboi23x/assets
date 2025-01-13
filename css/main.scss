@@ -32,6 +32,10 @@ $color-bg: #000;
 * 55 styles
 */
 
+* {
+        font-family: FreePixel !important;
+}
+
 .box {
         border: 1px solid $grey-color-light;
         width: 100%;
