@@ -6,4 +6,4 @@ preview: embeds/leveldevil/icon.png
 embed_url55: embeds/leveldevil/index.html
 
 ---
-A cell-based game that plays itself based on a simple set of rules. Create patterns and watch them transform!
+Use the arrow keys to move through tricky stages which want to kill you. Each set of 5 levels has unique mechanics that you must master.
