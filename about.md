@@ -23,4 +23,4 @@ Site theme modified from midzer's [urban theme](https://github.com/midzer/urban-
 
 *The site or a game is broken!*
 
-Try reloading the cache by pressing **ctrl + shift + r** a few times. If this doesn't work report the issue using the link at the bottom of the page
+Try reloading the cache by pressing **ctrl + shift + r** a few times. If this doesn't work report the issue using the link at the bottom of the page.
