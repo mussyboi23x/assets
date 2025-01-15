@@ -12,15 +12,20 @@
       <li class="nav-item"><a href="{{ site.baseurl }}/">games</a></li>
       <li class="nav-item"><a href="{{ '/other' | relative_url }}">other</a></li>
       <li class="nav-item"><a href="{{ site.baseurl }}/about/">about</a></li>
-      <li class="nav-item"><a onclick="openblank()" href="javascript:void(0)">open blank</a></li>
+      <li class="nav-item"><a onclick="openthis()" href="javascript:void(0)">open blank</a></li>
     </ul>
   </nav>
 
 </header>
 <script>
-  function openblank() {
+  function openthis() {
+    opencustom(window.location.href);
+  }
+  function opencustom(url) {
     let a = window.open("about:blank");
-    a.document.body.style.margin = "0";
-    a.document.body.innerHTML = `<iframe src="` + window.location.href + `" style="border: 0; width: 100%; height: 100%;">`;
+    a.onload = () => {
+      a.document.body.style.margin = "0";
+      a.document.body.innerHTML = `<iframe src="` + url + `" style="border: 0; width: 100%; height: 100%;">`;
+    }
   }
 </script>
