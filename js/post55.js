@@ -73,11 +73,11 @@ document.getElementById("zoom_reset55").onclick = (e) => {
 }
 document.getElementById("popout55").onclick = (e) => {
     // If in about:blank mode
-    if (document.location.href == "about:blank") {
-        opencustom(iframe55.src);
-    } else {
-        document.location.href = iframe55.src;
-    }
+    //opencustom(iframe55.src);
+    let a = document.createElement("a");
+    a.href = iframe55.src;
+    a.target = "_blank";
+    a.click();
 }
 
 function preventDefault(e) {
